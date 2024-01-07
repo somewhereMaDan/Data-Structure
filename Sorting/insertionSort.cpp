@@ -29,5 +29,9 @@ int main(int argc, char const *argv[])
     arr[j + 1] = key; // arr[0] = key
   }
 
+  for (int i = 0; i < n; i++)
+  {
+    cout << arr[i] << " ";
+  }
   return 0;
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 struct BSTnode
@@ -84,12 +84,22 @@ void MAx(BSTnode *root)
 int main(int argc, char const *argv[])
 {
   BSTnode *root = NULL;
+  root = Insert(root, 17);
   root = Insert(root, 15);
+  root = Insert(root, 11);
   root = Insert(root, 10);
-  root = Insert(root, 20);
-  root = Insert(root, 25);
-  root = Insert(root, 5);
+  root = Insert(root, 13);
   root = Insert(root, 30);
+  root = Insert(root, 26);
+  root = Insert(root, 32);
+  root = Insert(root, 28);
+  root = Insert(root, 27);
+  // root = Insert(root, 15);
+  // root = Insert(root, 10);
+  // root = Insert(root, 20);
+  // root = Insert(root, 25);
+  // root = Insert(root, 5);
+  // root = Insert(root, 30);
 
   Display(root);
 

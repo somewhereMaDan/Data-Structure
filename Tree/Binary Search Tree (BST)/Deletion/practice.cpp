@@ -45,7 +45,7 @@ Node* Delete(Node* root, int data){
       root = root->left;
       delete temp;
     }
-    // Case 2: Two Child
+    // Case 3: Two Child
     else{
       Node* temp = FindMin(root->right); // here we would find the minimum vaLue in right which is 17 and the address of it will get stored in temp(400)
       root->data = temp->data; // now the data of root, address(350) will store the data of temp(address 400) value 17

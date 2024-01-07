@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
     {
       if (arr[i] > arr[i + 1])
       {
-        int temp = arr[i];
+        int temp = arr[i]; // temp = 45
         arr[i] = arr[i + 1];
         arr[i + 1] = temp;
       }

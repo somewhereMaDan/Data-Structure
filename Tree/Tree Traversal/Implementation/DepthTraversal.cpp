@@ -45,9 +45,9 @@ void preOrder(Node* root){
 void postOrder(Node* root){
   if(root == NULL) return;
   
-  cout << root->data << " ";
   postOrder(root->left);
   postOrder(root->right);
+  cout << root->data << " ";
 }
 
 int main(int argc, char const *argv[])
@@ -63,6 +63,18 @@ int main(int argc, char const *argv[])
   root = Insert(root, 32);
   root = Insert(root, 28);
   root = Insert(root, 27);
+
+  /*
+                          17
+                        /   \
+                      15    30
+                      /    /  \
+                    11    26  32
+                   /  \    \
+                  10  13   28
+                          /
+                         27
+  */
 
   cout << "inOrder traversal: " << endl;
   inOrder(root);

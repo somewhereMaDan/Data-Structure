@@ -3,11 +3,11 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+  int arr[50];
   int n;
-  cout << "size: " << endl;
+  cout << "Enter the size of the array: " << endl;
   cin >> n;
-  int arr[n];
-  
+
   cout << "elements: " << endl;
   for (int i = 0; i < n; i++)
   {
@@ -25,15 +25,16 @@ int main(int argc, char const *argv[])
   {
     cout << "not possible" << endl;
   }else{
-    for (int i = n; i < position; i++)
+    for (int i = n; i > position; i--)
     {
-      arr[i+1] = arr[i];
+      // arr[i+1] = arr[i];
+      arr[i] = arr[i-1];
     }
     arr[position] = value;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n; i++)
     {
-      cout << arr[i];
+      cout << arr[i] << " ";
     }
   }
   return 0;

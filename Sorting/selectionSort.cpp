@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
   {
     for (int j = i+1; j < n; j++)
     {
-      if (arr[j]<arr[i])
+      if(arr[j]<arr[i])
       {
         int temp = arr[i];
         arr[i] = arr[j];
