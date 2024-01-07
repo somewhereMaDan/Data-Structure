@@ -4,6 +4,7 @@
 #   3. Get a Random Value that is already inserted 
 #                           (with equal probablity) 
 
+# Get all these three function in constant time, O(1).
 import random
 
 class store:
