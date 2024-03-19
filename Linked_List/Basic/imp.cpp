@@ -10,7 +10,7 @@ struct Node *head = NULL; // pointer to head node
 
 void insert(int newData) // function to insert a new node
 {
-  struct Node *temp = new Node(); // create a new node, and store the data in it
+  struct Node *temp = new Node(); // create a new node, and store the address of the node in it
   temp->data = newData; // store the data in the new node
   temp->next = head; // store the address of the head node in the new node
   head = temp; // the address of new node is stored in head,
