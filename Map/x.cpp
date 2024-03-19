@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
 {
   map<string, int> marksMap;
   marksMap["Madan"] = 97;
-  marksMap["Ritika"] = 77;
+  marksMap["Alishka"] = 77;
   marksMap["Anshikha"] = 83;
 
   marksMap.insert({{"Naruto", 100}, {"Sasuke", 100}});
